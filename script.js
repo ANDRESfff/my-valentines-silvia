@@ -39,11 +39,40 @@ class Heart {
   }
 }
 
-setInterval(() => {
-  const heart = new Heart(Math.random() * window.innerWidth, -100);
-  hearts.push(heart);
-}, 200);
 
 setInterval(() => {
   hearts.forEach((heart) => heart.update());
 }, 10);
+
+
+function noBtn() {
+  document.getElementById("catImage").src = "img/sadCat.gif";
+  answers = [
+    "Como que no?",
+    "Di que si",
+    "Vuelve a escoger",
+    "Respuesta equivocada",
+    "Intenta de nuevo",
+    "Nope",
+    "De nuevo",
+    "Pon que si",
+    "Boton equivocado",
+    "Es el otro boton"
+  ];
+  document.getElementById("respuestas").innerHTML = answers[getRandomInt(answers.length)];
+}
+
+function yesBtn() {
+  document.getElementById("catImage").src = "img/happyCat.gif";
+  document.getElementById("pregunta").style.display = "none";
+  document.getElementById("btn-container").style.display = "none";
+  document.getElementById("respuestas").innerHTML = "Feliz San Valentin amor, gracias por estar en mi vida. Te amo con todo mi ser ❤"  
+  setInterval(() => {
+    const heart = new Heart(Math.random() * window.innerWidth, -100);
+    hearts.push(heart);
+  }, 200);
+}
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
