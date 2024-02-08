@@ -62,10 +62,8 @@ function noBtn() {
     "Reconsidera tu elección",
     "Error, inténtalo otra vez",
     "Negativo",
-    "Una vez más",
     "Escoge otra vez",
     "Respuesta incorrecta",
-    "No es esa opción",
     "Prueba de nuevo",
     "Error, elige otra vez",
     "No, esa no es la respuesta",
@@ -79,6 +77,11 @@ function noBtn() {
     "Yo se que si quieres",
     "Como tu dices: me caes mal",
     "Nope, ya te cansaste?",
+    "Por que pusiste que no?",
+    "Todo mal",
+    "Ya no me quieres?",
+    "Como que no?",
+    "Todo bien"
   ];
   document.getElementById("respuestas").innerHTML = answers[getRandomInt(answers.length)];
 }

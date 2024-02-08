@@ -4,7 +4,7 @@ html {
   
   body {
     padding: 10px;
-    background: radial-gradient(circle at 0.1% 53.8%, rgb(255, 182, 172) 0%, rgb(255, 123, 172) 100.2%);
+    background: radial-gradient(circle at 0.1% 53.8%, rgb(255, 182, 172) 10%, rgb(255, 123, 172) 100.2%);
     display: flex;
     justify-content: center;
     align-items: center;
