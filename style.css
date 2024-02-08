@@ -3,7 +3,8 @@ html {
   }
   
   body {
-    background: pink;
+    padding: 10px;
+    background: radial-gradient(circle at 0.1% 53.8%, rgb(255, 182, 172) 0%, rgb(255, 123, 172) 100.2%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,9 +53,9 @@ html {
   
   .panel {
     z-index: 1;
-    padding: 30px;
-    background: rgba(216, 121, 121, 0.331);
-    box-shadow: 0 16px 64px 0 rgb(255, 165, 180);
+    padding: 10px;
+    background: rgba(255, 138, 173, 0.308);
+    box-shadow: 0px 0px 49px 0px rgba(167, 97, 134, 0.692);
     backdrop-filter: blur( 10.5px );
     -webkit-backdrop-filter: blur( 10.5px );
     border-radius: 20px;
@@ -123,10 +124,6 @@ html {
     height: auto;
 }
 
-.container h2 {
-    margin-top: 10px;
-}
-
 .container .buttons {
     margin-top: 10px;
     display: flex;
@@ -134,6 +131,6 @@ html {
 
 .container .buttons button {
     padding: 10px 20px;
-    margin: 0 10px;    
-    width: 150px;
+    margin: 0 5px;    
+    width: 100px;
 }

@@ -87,7 +87,7 @@ function yesBtn() {
   document.getElementById("catImage").src = "img/happyCat.gif";
   document.getElementById("pregunta").style.display = "none";
   document.getElementById("btn-container").style.display = "none";
-  document.getElementById("respuestas").innerHTML = "Feliz San Valentin amor, gracias por estar en mi vida. Te amo con todo mi ser ❤"  
+  document.getElementById("respuestas").innerHTML = "Por tantas palabras que existan, jamas podre explicarte cuanto te amo, Feliz San Valentin amor ❤"  
   setInterval(() => {
     const heart = new Heart(Math.random() * window.innerWidth, -100);
     hearts.push(heart);
