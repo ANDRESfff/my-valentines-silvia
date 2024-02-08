@@ -111,12 +111,6 @@ html {
   outline: 0;
 }
 
-@media (min-width: 768px) {
-  .cool-btn {
-    padding: 0 40px;
-  }
-}
-
 .container {
     display: flex;
     flex-direction: column;
@@ -130,11 +124,11 @@ html {
 }
 
 .container h2 {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .container .buttons {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
 }
 
