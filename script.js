@@ -45,8 +45,34 @@ setInterval(() => {
 }, 10);
 
 
-function noBtn() {
-  document.getElementById("catImage").src = "img/sadCat.gif";
+function noBtn() {  
+  sadCats =[
+    "img/wutCat.gif",
+    "img/sadCat.gif",
+    "img/bananaCat.gif",
+    "img/angryCat.gif",
+    "img/weirdCat.gif",
+    "img/sadCat1.gif",
+    "img/dissapCat.gif",
+    "img/pizzaCat.gif",
+    "img/madCat.gif",
+    "img/angCat.gif",
+    "img/indCat.gif",
+    "img/susCat.gif",
+    "img/sadCat2.gif",
+    "img/madCat1.gif",
+    "img/drunkCat.gif",
+    "img/noCat.gif",
+    "img/crazyCat1.gif",
+    "img/boredCat.gif",
+    "img/sadgeCat.gif",
+    "img/angryCat2.gif",
+    "img/angryCat3.gif",
+    "img/cryingCat.gif",
+    "img/fatCat.gif",
+    "img/shockCat.gif",
+  ];
+  document.getElementById("catImage").src = sadCats[getRandomInt(sadCats.length)];
   answers = [
     "Como que no?",
     "Di que si",
@@ -87,10 +113,10 @@ function noBtn() {
 }
 
 function yesBtn() {
-  document.getElementById("catImage").src = "img/happyCat.gif";
+  document.getElementById("catImage").src = "img/yesCat.gif";
   document.getElementById("pregunta").style.display = "none";
   document.getElementById("btn-container").style.display = "none";
-  document.getElementById("respuestas").innerHTML = "Por tantas palabras que existan, jamas podre explicarte cuanto te amo, Feliz San Valentin amor ❤"  
+  document.getElementById("respuestas").innerHTML = "Hay muchas maneras de decirte te amo, pero no las suficientes palabras para explicarte cuánto te amo. <br>Feliz San Valentin amor ❤❤"  
   setInterval(() => {
     const heart = new Heart(Math.random() * window.innerWidth, -100);
     hearts.push(heart);
