@@ -116,7 +116,7 @@ function yesBtn() {
   document.getElementById("catImage").src = "img/yesCat.gif";
   document.getElementById("pregunta").style.display = "none";
   document.getElementById("btn-container").style.display = "none";
-  document.getElementById("respuestas").innerHTML = "Hay muchas maneras de decirte te amo, pero no las suficientes palabras para explicarte cuánto te amo. <br>Feliz San Valentin amor ❤❤"  
+  document.getElementById("respuestas").innerHTML = "Hay muchas maneras de decirte te amo, pero no las suficientes palabras para explicarte cuánto te amo. <br>Feliz San Valentin amor ❤❤<br>PD:sabía que dirias que si jaja"; 
   setInterval(() => {
     const heart = new Heart(Math.random() * window.innerWidth, -100);
     hearts.push(heart);
